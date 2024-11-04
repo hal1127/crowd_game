@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="crowd_game"
+run/main_scene="res://main_scene.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=600
+window/size/viewport_height=800
+
+[layer_names]
+
+2d_physics/layer_1="Rock"
+2d_physics/layer_2="Paper"
+2d_physics/layer_3="Scissor"
+2d_physics/layer_4="Wall"
+
+[physics]
+
+2d/default_linear_damp=0.0
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
